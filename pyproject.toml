@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "distrilize"
+version = "0.1.0"
+description = "A package that turns LLM into primitive distributions."
+readme = "README.md"
+requires-python = ">=3.11.10"
+license = { text = "MIT License" }
+authors = [
+    { name = "Kai Xu", email = "me@xuk.ai" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "langchain-openai>=0.2.9",
+    "pydantic>=2.10.0",
+    "langchain-core>=0.3.19",
+    "prompt_toolkit>=3.0.48",
+    "click>=8.1.7"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/xukai92/distrilize"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
